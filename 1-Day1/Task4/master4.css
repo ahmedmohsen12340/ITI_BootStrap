@@ -1,0 +1,36 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    height: 100vh;
+}
+.obj{
+    background-color: blue;
+    height: 100px;
+}
+.main,
+.gap,
+.side{
+    height: calc(100vh - 262px);
+}
+
+.row{
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid red;
+}
+
+@media(max-width:766px){
+    .gap{
+        display: none;
+    }
+    .col-sm-12{
+        width: 100%;
+    }
+    .main,
+    .side{
+        margin: 10px 0;
+    }    
+}
